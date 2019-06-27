@@ -2,6 +2,7 @@
 
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
+Contributors: None
 Requires at least: 4.5
 Tested up to: 5.1
 Stable tag: 1.0.0
@@ -30,6 +31,16 @@ Kappscores includes support for Infinite Scroll in Jetpack.
 
 = 1.0 - May 12 2015 =
 * Initial release
+
+== License ==
+    Unless otherwise specified, all the theme files, scripts and images
+    are licensed under GNU General Public License version 2, see http://www.gnu.org/licenses/gpl-2.0.html.
+
+== Upgrade Notice ==
+
+
+== Screenshots ==
+
 
 == Credits ==
 
