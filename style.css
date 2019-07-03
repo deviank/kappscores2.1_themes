@@ -2198,7 +2198,7 @@ ul.children.toggled-on,
 		display: flex;
 		-ms-flex-wrap: wrap;
 		    flex-wrap: wrap;
-		-ms-flex-pack: distribute;
+		/*-ms-flex-pack: distribute;
 		    justify-content: space-around;
 		/* If only one widget is displayed, make it full width. */
 		/* If 2 or 3 widgets are displayed, make the second one twice as wide. */
