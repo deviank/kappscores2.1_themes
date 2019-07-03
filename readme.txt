@@ -12,6 +12,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 A starter theme called Kappscores.
 
+== Copyright ==
+
+Kappscores WordPress Theme, Copyright (C) 2019, Devian Kapp.
+Kappscores is distributed under the terms of the GNU GPL
+
 == Description ==
 
 Kappscores based theme
