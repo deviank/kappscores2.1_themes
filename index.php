@@ -43,9 +43,9 @@ get_header(); ?>
             endwhile;
 
             the_posts_pagination( array(
-                'prev_text' => __( 'Newer', 'kappscores2.1_themes' ),
-                'next_text' => __( 'Older', 'kappscores2.1_themes' ),
-                'before_page_number' => '<span class="screen-reader-text">' . __( 'Page ', 'kappscores2.1_themes' ) . '</span>',
+                'prev_text' => __( 'Newer', 'kappscores' ),
+                'next_text' => __( 'Older', 'kappscores' ),
+                'before_page_number' => '<span class="screen-reader-text">' . __( 'Page ', 'kappscores' ) . '</span>',
             ));
 
             ?>

@@ -22,8 +22,8 @@
         </nav><!-- .social-menu -->
 
         <div class="site-info">
-            <div><a href="<?php echo esc_url( __( 'https://wordpress.org/', 'kappscores2.1_themes' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'kappscores2.1_themes' ), 'WordPress' ); ?></a></div>
-            <div><?php printf( esc_html__( 'Theme: %1$s by %2$s', 'kappscores2.1_themes' ), 'kappscores', '<a href="https://www.devian.co.za rel="designer">Kappscores</a>' ); ?></div>
+            <div><a href="<?php echo esc_url( __( 'https://wordpress.org/', 'kappscores' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'kappscores2.1_themes' ), 'WordPress' ); ?></a></div>
+            <div><?php printf( esc_html__( 'Theme: %1$s by %2$s', 'kappscores' ), 'kappscores', '<a href="https://www.devian.co.za rel="designer">Kappscores</a>' ); ?></div>
         </div><!-- .site-info -->
     </div><!-- .site-footer__wrap -->
 </footer><!-- #colophon -->

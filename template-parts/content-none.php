@@ -4,19 +4,19 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package kappscores2.1_themes
+ * @package kappscores
  */
 
 ?>
     <header class="page-header">
         <h1 class="page-title">
             <?php
-            if ( is_404() ) { esc_html_e( 'Page not available', 'kappscores2.1_themes' );
+            if ( is_404() ) { esc_html_e( 'Page not available', 'kappscores' );
             } else if ( is_search() ) {
                 /* translators: %s = search query */
-                printf( esc_html__( 'Nothing found for &ldquo;%s&rdquo;', 'kappscores2.1_themes'), get_search_query() );
+                printf( esc_html__( 'Nothing found for &ldquo;%s&rdquo;', 'kappscores'), get_search_query() );
             } else {
-                esc_html_e( 'Nothing Found', 'kappscores2.1_themes' );
+                esc_html_e( 'Nothing Found', 'kappscores' );
             }
             ?>
         </h1>
@@ -28,7 +28,7 @@
             <div class="page-content">
                 <?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
 
-                    <p><?php printf( wp_kses( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'kappscores2.1_themes' ), array( 'a' => array( 'href' => array() ) ) ), esc_url( admin_url( 'post-new.php' ) ) ); ?></p>
+                    <p><?php printf( wp_kses( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'kappscores' ), array( 'a' => array( 'href' => array() ) ) ), esc_url( admin_url( 'post-new.php' ) ) ); ?></p>
 
                 <?php elseif ( is_search() ) : ?>
 
@@ -51,7 +51,7 @@
             <?php
             if ( is_404() || is_search() ) {
                 ?>
-                <h2 class="page-title secondary-title"><?php esc_html_e( 'Most recent posts:', 'kappscores2.1_themes' ); ?></h2>
+                <h2 class="page-title secondary-title"><?php esc_html_e( 'Most recent posts:', 'kappscores' ); ?></h2>
                 <?php
                 // Get the 6 latest posts
                 $args = array(

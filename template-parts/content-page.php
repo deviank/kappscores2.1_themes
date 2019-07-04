@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package kappscores2.1_themes
+ * @package kappscores
  */
 
 ?>
@@ -18,7 +18,7 @@
     if ( has_post_thumbnail() ) { ?>
         <figure class="featured-image full-bleed">
             <?php
-            the_post_thumbnail('kappscores2.1_themes-full-bleed');
+            the_post_thumbnail('kappscores-full-bleed');
             ?>
         </figure><!-- .featured-image full-bleed -->
     <?php } ?>
@@ -29,7 +29,7 @@
         the_content();
 
         wp_link_pages( array(
-            'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'kappscores2.1_themes' ),
+            'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'kappscores' ),
             'after'  => '</div>',
         ) );
         ?>
