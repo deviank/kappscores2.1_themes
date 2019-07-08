@@ -135,11 +135,11 @@ add_action( 'save_post',     'kappscores_category_transient_flusher' );
  */
 function kappscores_post_navigation() {
     the_post_navigation( array(
-        'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next', 'kappscores' ) . '</span> ' .
-            '<span class="screen-reader-text">' . __( 'Next post:', 'kappscores' ) . '</span> ' .
+        'next_text' => '<span class="meta-nav" aria-hidden="true">' . esc_html__( 'Next', 'kappscores' ) . '</span> ' .
+            '<span class="screen-reader-text">' . esc_html__( 'Next post:', 'kappscores' ) . '</span> ' .
             '<span class="post-title">%title</span>',
-        'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous', 'kappscores' ) . '</span> ' .
-            '<span class="screen-reader-text">' . __( 'Previous post:', 'kappscores' ) . '</span> ' .
+        'prev_text' => '<span class="meta-nav" aria-hidden="true">' . esc_html__( 'Previous', 'kappscores' ) . '</span> ' .
+            '<span class="screen-reader-text">' . esc_html__( 'Previous post:', 'kappscores' ) . '</span> ' .
             '<span class="post-title">%title</span>',
     ) );
 }
