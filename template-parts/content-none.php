@@ -32,17 +32,17 @@
 
                 <?php elseif ( is_search() ) : ?>
 
-                    <p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'kappscores2.1_themes' ); ?></p>
+                    <p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'kappscores' ); ?></p>
                     <?php get_search_form(); ?>
 
                 <?php elseif ( is_404() ) : ?>
 
-                    <p><?php esc_html_e( 'You seem to be lost. To find what you are looking for check out the most recent articles below or try a search:', 'kappscores2.1_themes' ); ?></p>
+                    <p><?php esc_html_e( 'You seem to be lost. To find what you are looking for check out the most recent articles below or try a search:', 'kappscores' ); ?></p>
                     <?php get_search_form(); ?>
 
                 <?php else : ?>
 
-                    <p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'kappscores2.1_themes' ); ?></p>
+                    <p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'kappscores' ); ?></p>
                     <?php get_search_form(); ?>
 
                 <?php endif; ?>

@@ -41,9 +41,9 @@ if ( have_posts() ) : ?>
                 endwhile;
 
                 the_posts_pagination( array(
-                    'prev_text' => __( 'Newer', 'kappscores' ),
-                    'next_text' => __( 'Older', 'kappscores' ),
-                    'before_page_number' => '<span class="screen-reader-text">' . __( 'Page ', 'kappscores' ) . '</span>',
+                    'prev_text' => esc_html__( 'Newer', 'kappscores' ),
+                    'next_text' => esc_html__( 'Older', 'kappscores' ),
+                    'before_page_number' => '<span class="screen-reader-text">' . esc_html__( 'Page ', 'kappscores' ) . '</span>',
                 ));
 
             else :
