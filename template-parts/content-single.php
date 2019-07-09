@@ -29,7 +29,7 @@
 
     <?php
     if ( has_post_thumbnail() ) { ?>
-        <figure class="featured-image full-bleed">
+        <figure class="kappscores-index-img">
             <?php
             the_post_thumbnail('kappscores-full-bleed');
             ?>
