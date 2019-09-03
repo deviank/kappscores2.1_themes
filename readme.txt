@@ -12,7 +12,7 @@ A starter theme called Kappscores.
 
 == Description ==
 
-Kappscores based theme
+Kappscores based theme. This theme showcases the best of Wordpress and Underscores.
 
 == Installation ==
 
