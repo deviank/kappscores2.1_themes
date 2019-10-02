@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package kappscores
+ * @package kappscores2.1_themes
  */
 
 ?>
@@ -16,7 +16,7 @@
         <figure class="featured-image index-image">
             <a href="<?php echo esc_url( get_permalink() ) ?>" rel="bookmark">
                 <?php
-                the_post_thumbnail('kappscores-index-img');
+                the_post_thumbnail('kappscores2.1_themes-index-img');
                 ?>
             </a>
         </figure><!-- .featured-image full-bleed -->
@@ -50,7 +50,7 @@
             <?php
             $read_more_link = sprintf(
             /* translators: %s: Name of current post. */
-                wp_kses( __( 'Continue reading %s', 'kappscores' ), array( 'span' => array( 'class' => array() ) ) ),
+                wp_kses( __( 'Continue reading %s', 'kappscores2.1_themes' ), array( 'span' => array( 'class' => array() ) ) ),
                 the_title( '<span class="screen-reader-text">"', '"</span>', false )
             );
             ?>

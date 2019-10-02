@@ -46,8 +46,8 @@ if ( ! function_exists( 'kappscores_setup' ) ) :
 
         // This theme uses wp_nav_menu() in one location.
         register_nav_menus( array(
-            'primary' => esc_html__( 'Header', 'kappscores' ),
-            'social' => esc_html__( 'Social Media Menu', 'kappscores' ),
+            'primary' => esc_html__( 'Header', 'kappscores2.1_themes' ),
+            'social' => esc_html__( 'Social Media Menu', 'kappscores2.1_themes' ),
         ) );
 
         /*
@@ -94,8 +94,8 @@ function kappscores_fonts_url() {
      * supported by Source Sans Pro and PT Serif, translate this to 'off'. Do not translate
      * into your own language.
      */
-    $source_sans_pro = _x( 'on', 'Source Sans Pro font: on or off', 'kappscores' );
-    $pt_serif = _x( 'on', 'PT Serif font: on or off', 'kappscores' );
+    $source_sans_pro = _x( 'on', 'Source Sans Pro font: on or off', 'kappscores2.1_themes' );
+    $pt_serif = _x( 'on', 'PT Serif font: on or off', 'kappscores2.1_themes' );
 
     $font_families = array();
 
@@ -236,9 +236,9 @@ add_filter( 'wp_get_attachment_image_attributes', 'kappscores_post_thumbnail_siz
  */
 function kappscores_widgets_init() {
     register_sidebar( array(
-        'name'          => esc_html__( 'Sidebar', 'kappscores' ),
+        'name'          => esc_html__( 'Sidebar', 'kappscores2.1_themes' ),
         'id'            => 'sidebar-1',
-        'description'   => esc_html__( 'Add sidebar widgets here.', 'kappscores' ),
+        'description'   => esc_html__( 'Add sidebar widgets here.', 'kappscores2.1_themes' ),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
         'after_widget'  => '</section>',
         'before_title'  => '<h2 class="widget-title">',
@@ -246,9 +246,9 @@ function kappscores_widgets_init() {
     ) );
 
     register_sidebar( array(
-        'name'          => esc_html__( 'Page Sidebar', 'kappscores' ),
+        'name'          => esc_html__( 'Page Sidebar', 'kappscores2.1_themes' ),
         'id'            => 'sidebar-2',
-        'description'   => esc_html__( 'Add page sidebar widgets here.', 'kappscores' ),
+        'description'   => esc_html__( 'Add page sidebar widgets here.', 'kappscores2.1_themes' ),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
         'after_widget'  => '</section>',
         'before_title'  => '<h2 class="widget-title">',
@@ -256,9 +256,9 @@ function kappscores_widgets_init() {
     ) );
 
     register_sidebar( array(
-        'name'          => esc_html__( 'Footer Widgets', 'kappscores' ),
+        'name'          => esc_html__( 'Footer Widgets', 'kappscores2.1_themes' ),
         'id'            => 'footer-1',
-        'description'   => esc_html__( 'Add footer widgets here.', 'kappscores' ),
+        'description'   => esc_html__( 'Add footer widgets here.', 'kappscores2.1_themes' ),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
         'after_widget'  => '</section>',
         'before_title'  => '<h2 class="widget-title">',
@@ -279,8 +279,8 @@ function kappscores_scripts() {
 
     wp_enqueue_script( 'kappscores-navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20151215', true );
     wp_localize_script( 'kappscores-navigation', 'kappscoresScreenReaderText', array(
-        'expand' => __( 'Expand child menu', 'kappscores'),
-        'collapse' => __( 'Collapse child menu', 'kappscores'),
+        'expand' => __( 'Expand child menu', 'kappscores2.1_themes'),
+        'collapse' => __( 'Collapse child menu', 'kappscores2.1_themes'),
     ));
 
     wp_enqueue_script( 'kappscores-functions', get_template_directory_uri() . '/js/functions.js', array('jquery'), '20161201', true );
