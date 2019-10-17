@@ -19,7 +19,7 @@ Kappscores is distributed under the terms of the GNU GPL
 
 == Description ==
 
-Kappscores based theme
+Kappscores based theme. This theme showcases the best of WordPress and Underscores.
 
 == Installation ==
 
