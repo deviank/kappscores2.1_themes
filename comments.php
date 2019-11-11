@@ -37,12 +37,12 @@ if ( post_password_required() ) {
                     esc_html()(_nx(
                         '%1$s Reply to &ldquo;%2$s&rdquo;',
                         '%1$s Replies to &ldquo;%2$s&rdquo;',
-                        $comments_number,
+                        esc_html($comments_number),
                         'comments title',
                         'kappscores'
                     )),
-                    number_format_i18n( $comments_number ),
-                    get_the_title()
+                    esc_html(number_format_i18n( $comments_number )),
+                    esc_html(get_the_title())
                 );
             }
             ?>
