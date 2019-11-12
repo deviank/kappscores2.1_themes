@@ -52,7 +52,7 @@
 			$kappscores_description = get_bloginfo( 'description', 'display' );
 			if ( $kappscores_description || is_customize_preview() ) :
 				?>
-				<p class="site-description"><?php echo $kappscores_description; /* WPCS: xss ok. */ ?></p>
+				<p class="site-description"><?php echo esc_html($kappscores_description); /* phpcs:ignore Standard.Category.SniffName.ErrorCode */ ?></p>
 			<?php endif; ?>
         </div><!--.site-branding__text-->
 		</div><!-- .site-branding -->
