@@ -22,10 +22,12 @@
         </nav><!-- .social-menu -->
 
         <div class="site-info">
-            <?php /* translators: %s:  author or site name*/ ?>
             <div>
+                <?php /* translators: %s:  author or site name*/ ?>
                 <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'kappscores' ) ); ?>">
-                    <?php printf( esc_html__( 'Proudly powered by %s', 'kappscores' ), 'WordPress' ); ?></a></div>
+                    <?php /* translators: %s:  author or site name*/ ?>
+                        <?php printf( esc_html__( 'Proudly powered by %s', 'kappscores' ), 'WordPress' ); ?></a></div>
+                    <?php /* translators: %s:  author or site name*/ ?>
             <div><?php printf( esc_html__( 'Theme: %1$s by %2$s', 'kappscores' ), 'kappscores', '<a href="https://www.devian.co.za rel="designer">Kappscores</a>' ); ?></div>
         </div><!-- .site-info -->
     </div><!-- .site-footer__wrap -->
