@@ -24,17 +24,20 @@ if ( ! function_exists( 'kappscores_posted_on' ) ) :
             esc_html( get_the_modified_date() )
         );
 
+
         $posted_on = sprintf(
+            /* translators: %s: search term */
             esc_html_x( 'Published %s', 'post date', 'kappscores' ),
             '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
         );
 
         $byline = sprintf(
+            /* translators: %s: search term */
             esc_html_x( 'Written by %s', 'post author', 'kappscores' ),
             '<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
         );
 
-        echo '<span class="byline"> ' . $byline . '</span> <span class="posted-on">' . $posted_on . '</span>'; // WPCS: XSS OK.
+        echo '<span class="byline"> ' . $byline . '</span> <span class="posted-on">' . $posted_on . '</span>'; // phpcs:ignore Standard.Category.SniffName.ErrorCode.
 
         if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
             echo ' <span class="comments-link"><span class="extra">Discussion </span>';
