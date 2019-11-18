@@ -26,13 +26,13 @@ if ( ! function_exists( 'kappscores_posted_on' ) ) :
 
 
         $posted_on = sprintf(
-            /* translators: %s: posts */
+            /* translators: %s: posts publish date*/
             esc_html_x( 'Published %s', 'post date', 'kappscores' ),
             '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
         );
 
         $byline = sprintf(
-            /* translators: %s: search term */
+            /* translators: %s:  post author*/
             esc_html_x( 'Written by %s', 'post author', 'kappscores' ),
             '<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
         );
