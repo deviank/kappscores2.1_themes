@@ -26,7 +26,7 @@ if ( ! function_exists( 'kappscores_posted_on' ) ) :
 
 
         $posted_on = sprintf(
-            /* translators: %s: search term */
+            /* translators: %s: posts */
             esc_html_x( 'Published %s', 'post date', 'kappscores' ),
             '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
         );
