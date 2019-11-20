@@ -37,7 +37,7 @@ if ( ! function_exists( 'kappscores_posted_on' ) ) :
             '<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
         );
 
-        echo '<span class="byline"> ' . $byline . '</span> <span class="posted-on">' . $posted_on . '</span>'; // phpcs:ignore Standard.Category.SniffName.ErrorCode.
+        echo '<span class="byline"> ' . esc_html($byline) . '</span> <span class="posted-on">' . esc_html($posted_on) . '</span>'; // phpcs:ignore Standard.Category.SniffName.ErrorCode.
 
         if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
             echo ' <span class="comments-link"><span class="extra">Discussion </span>';
@@ -70,7 +70,8 @@ if ( ! function_exists( 'kappscores_entry_footer' ) ) :
             /* translators: used between list items, there is a space after the comma */
             $tags_list = get_the_tag_list( '', esc_html__( ', ', 'kappscores' ) );
             if ( $tags_list ) {
-                printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'kappscores' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+                /* translators: %s: tags*/
+                printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'kappscores' ) . '</span>', esc_html($tags_list) ); // phpcs:ignore Standard.Category.SniffName.ErrorCode.
             }
         }
 
@@ -85,7 +86,8 @@ function kappscores_the_category_list() {
     /* translators: used between list items, there is a space after the comma */
     $categories_list = get_the_category_list( esc_html__( ', ', 'kappscores' ) );
     if ( $categories_list && kappscores_categorized_blog() ) {
-        printf( '<span class="cat-links">' . esc_html__( '%1$s', 'kappscores' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+        /* translators: %s: category links */
+        printf( '<span class="cat-links">' . printf(esc_html__( '%1$s', 'kappscores' )). '</span>', esc_html($categories_list) ); // phpcs:ignore Standard.Category.SniffName.ErrorCode.
     }
 }
 
