@@ -76,6 +76,8 @@ if ( ! function_exists( 'kappscores_setup' ) ) :
         ));
 
         /*Editor styles*/
+        // For the Block Editor.
+        add_theme_support( 'editor-styles' );
         add_editor_style(array('inc/editor-styles.css', kappscores_fonts_url()));
 
     }

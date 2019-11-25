@@ -71,7 +71,7 @@ if ( ! function_exists( 'kappscores_entry_footer' ) ) :
             $tags_list = get_the_tag_list( '', esc_html__( ', ', 'kappscores' ) );
             if ( $tags_list ) {
                 /* translators: %s: tags*/
-                printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'kappscores' ) . '</span>', esc_html($tags_list) ); // phpcs:ignore Standard.Category.SniffName.ErrorCode.
+                printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'kappscores' ) . '</span>', $tags_list ); // phpcs:ignore Standard.Category.SniffName.ErrorCode.
             }
         }
 
@@ -87,7 +87,7 @@ function kappscores_the_category_list() {
     $categories_list = get_the_category_list( esc_html__( ', ', 'kappscores' ) );
     if ( $categories_list && kappscores_categorized_blog() ) {
         /* translators: %s: category links */
-        printf( '<span class="cat-links">' . printf(esc_html__( '%1$s', 'kappscores' )). '</span>', esc_html($categories_list) ); // phpcs:ignore Standard.Category.SniffName.ErrorCode.
+        printf( '<span class="cat-links">' . esc_html__( '%1$s', 'kappscores' ). '</span>', $categories_list ); // phpcs:ignore Standard.Category.SniffName.ErrorCode.
     }
 }
 
